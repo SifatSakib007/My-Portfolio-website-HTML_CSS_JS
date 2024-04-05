@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add the Font Awesome CSS file -->
+    <script src="https://kit.fontawesome.com/0a5a931992.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- loading page -->
+    <!--  <link rel="stylesheet" href="loading-page_css.css"> -->
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- library for 3d -->
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading page start -->
+    <!-- <div class="container">
+        <p>Welcome to my Portfolio</p>
+    </div>
+
+    <div class="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+            <path
+                d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.3icon4zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+        </svg>
+        <div class="name-container">
+                <div class="ow-name">Sifat Sakib</div>
+        </div>
+    </div> -->
+    <!-- Loading page end -->
+
+
+    <!--Contact Me Button on the top right start-->
+    <div id="scrollButtonWrapper" class="wrapper">
+        <div class="link_wrapper">
+            <a href="contactForm.php">Contact<br> Me!</a>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                    <path
+                        d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!--Contact Me Button on the top right end-->
+
+    <!--Side Navigation bar start-->
+    <div class="Main-container">
+        <div class="menu">
+            <img id="pro-img" src="/pictures/profile.jpg" alt="display_pictue">
+
+            <div>
+                <ul class="men">
+                    <li>
+                        <button>
+                            <a class="home" href="#home">
+                                <i class="fa-solid fa-house-user"></i>
+                                <span>Home</span>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a class="portfolio" href="#portfolio">
+                                <i class="fa-solid fa-address-book"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <a class="whi" href="#section4">
+                                <i class="fa-solid fa-list-check"></i>
+                                <span>Project</span>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--  <nav class="nav">
+            <input id="clickMe" type="checkbox">
+            <label for="clickMe">Click Me</label>
+            <ul class="clickMe">
+                <li>
+                    <a href="#0">
+                        
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                      
+                    <i class="fa-brands fa-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                       
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                      
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav> -->
+
+        </div>
+    </div>
+    <!--Side Navigation bar end-->
+
+    <!-- Main Page start-->
+    <!-- intro section start -->
+    <section id="section1">
+        <div class="home-page" id="home">
+            <!-- <div class="sec1">
+        <section class="sec11" id="#sec111">
+            
+            <img class=" it item1" src="pictures/html.png" alt="Adobe xd">
+            <img class=" it item2" src="pictures/css.png" alt="" >
+            <img class=" it item3" src="pictures/js.png" alt="" >
+            <img class=" it item4" src="pictures/php.png" alt="" >
+            <img class=" it item5" src="pictures/c-sharp.png" alt="" >
+            <img class=" it item6" src="pictures/sql.png" alt="" >
+            <img class=" it item7" src="pictures/dotnet.png" alt="" >
+        
+        </section>
+        </div> -->
+            <!-- <div class="container">
+            <div class="shadows">
+                <span>s</span>
+                <span>I</span>
+                <span>F</span>
+                <span>A</span>
+                <span>T&nbsp&nbsp</span>
+                <span>S</span>
+                <span>A</span>
+                <span>K</span>
+                <span>I</span>
+                <span>B</span>
+            </div>
+        </div> -->
+            <div class="html-style first-intro">
+                &lt;intro&gt;
+            </div>
+            <!-- <div class="startsection" id="startsection"></div> -->
+            <div class="intro-start" id="intro-start">
+
+                <div class="panel">
+                    <div class="panel__content-col">
+                        <div class="panel__content">
+                            <div class="panel__text">
+                                <h1 class="panel__title">Sifat Sakib</h1>
+                                <p class="panel__addr"><span></span>Dhaka, Bangladesh</p>
+                            </div>
+                            <div class="panel__line"></div>
+                        </div>
+                    </div>
+                    <div class="panel__img-col">
+                        <img src="https://media.licdn.com/dms/image/C5603AQHZEJ57zMtgvA/profile-displayphoto-shrink_800_800/0/1649309806024?e=2147483647&v=beta&t=vbZBq_Fup3yUDtXL3uJGajZfFAmGhZQKWYkNn-2YcJA"
+                            alt="" class="panel__img">
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                var $body = $('.home-page'),
+                    $panel = $('.panel'),
+                    $pContent = $('.panel__content'),
+                    $img = $('.panel__img-col');
+
+                function initTilt() {
+                    TweenMax.set([$pContent, $img], { transformStyle: "preserve-3d" });
+
+                    $body.mousemove(function (e) {
+                        tilt(e.pageX, e.pageY)
+                    });
+                };
+
+                function tilt(cx, cy) {
+
+                    var sxPos = (cx / $body.width() * 100 - 50) * 2;
+                    var syPos = (cy / $body.height() * 100 - 50) * 2;
+                    TweenMax.to($pContent, 2, {
+                        rotationY: -0.03 * sxPos,
+                        rotationX: 0.03 * syPos,
+                        transformPerspective: 1000,
+                        transformOrigin: "center center -400",
+                        ease: Expo.easeOut
+                    });
+                    TweenMax.to($img, 2, {
+                        rotationY: -0.03 * sxPos,
+                        rotationX: 0.03 * syPos,
+                        transformPerspective: 1000,
+                        transformOrigin: "center center -200",
+                        ease: Expo.easeOut
+                    });
+                }
+
+                $body.mouseleave(function () {
+                    tilt($panel.width() / 2, $panel.height() / 2);
+                });
+
+
+                initTilt();
+
+                console.clear();
+            </script>
+        </div>
+
+        <!-- First typewriter effect -->
+        <div class="first-type">
+            <div class="input-text" data-aos="zoom-out"
+                data-text='["Hi 👋, I am Sifat Sakib, a software developer.👨‍💻", "Explore my portfolio 📊", "for a glimpse of my work🔧!"]'>
+                <div class="typeEffect">
+                    <div class="typedtext"></div>
+                </div>
+            </div>
+        </div>
+        <div class="html-style end-intro">
+            &lt;&#47;intro&gt;
+        </div>
+        <!-- Second typewriter effect -->
+        <div class="second-type">
+            <div class="input-text" data-aos="slide-down"
+                data-text='["&#x1F600; First, we need an", " idea ... &#x1F4BC;"]'>
+                <div class="typeEffect">
+                    <div class="typedtext"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- intro section end -->
+    <!-- conversation section -->
+    <section class="section2" id="section2">
+        <div id="portfolio">
+            <ul class="chat-thread" data-aos="zoom-in">
+                <li data-aos="zoom-in">I need a website for my company , PERIOD.<br>
+                    We specialize in the marketing of
+                    eco-responsible and<br> gender-neutral feminine hygiene products.</li>
+                <li data-aos="zoom-in">Okay, great!
+                    I take care of everything,<br> first of all the design that I share with you.<br>Once validated,
+                    I develop your website , before putting it online!</li>
+                <li data-aos="zoom-in">Perfect, when do we start?</li>
+                <script src="slide.js"></script>
+                <script>
+                    /* AOS.init(); */
+                    AOS.init({
+                        duration: 1200,
+                    })
+                </script>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <!-- Second typewriter effect -->
+    <!-- <div class="second-type">
+    <div class="input-text" data-aos="slide-right"
+        data-text='["&#x1F600; Hi, I am Sifat Sakib, a software developer.", "Explore my &#x1F4BC; portfolio", "for a glimpse of my work! &#x1F441;"]'>
+        <div class="typeEffect">
+            <div class="typedtext"></div>
+        </div>
+    </div>
+</div> -->
+    <section class="section3" id="section3">
+        <div class="illustration-editor">
+
+            <div class="code code-html">
+                <header>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.9999 6.675L13.1999 6.075C12.9999 5.975 12.8999 5.775 12.9999 5.675L13.8999 3.975C14.4999 2.775 13.1999 1.475 11.9999 2.075L10.2999 2.975C10.1999 3.075 9.9999 2.975 9.8999 2.775L9.2999 0.975C8.8999 -0.325 7.0999 -0.325 6.6999 0.975L6.0999 2.775C5.9999 2.975 5.7999 3.075 5.6999 2.975L3.9999 2.075C2.7999 1.475 1.4999 2.775 2.0999 3.975L2.9999 5.675C3.0999 5.775 2.9999 5.975 2.7999 6.075L0.999902 6.675C-0.300098 7.075 -0.300098 8.975 0.999902 9.375L2.7999 9.975C2.9999 9.975 3.0999 10.175 2.9999 10.275L2.0999 11.975C1.4999 13.175 2.7999 14.475 3.9999 13.875L5.6999 12.975C5.8999 12.875 6.0999 12.975 6.0999 13.175L6.6999 14.975C7.0999 16.275 8.9999 16.275 9.3999 14.975L9.9999 13.175C10.0999 12.975 10.2999 12.875 10.3999 12.975L12.0999 13.875C13.2999 14.475 14.5999 13.175 13.9999 11.975L12.9999 10.275C12.8999 10.075 12.9999 9.875 13.1999 9.875L14.9999 9.275C16.2999 8.875 16.2999 7.075 14.9999 6.675ZM7.9999 10.375C6.6999 10.375 5.5999 9.275 5.5999 7.975C5.5999 6.675 6.6999 5.575 7.9999 5.575C9.2999 5.575 10.3999 6.675 10.3999 7.975C10.3999 9.275 9.2999 10.375 7.9999 10.375Z"
+                            fill="#4C4F5A" />
+                    </svg>
+                    <h1>HTML</h1>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.7089 7.65105L14.8704 2.02908C15.1112 1.80937 15.2528 1.51212 15.2528 1.18902C15.2528 0.865913 15.1112 0.56866 14.8704 0.348951C14.6296 0.129241 14.3038 0 13.9497 0C13.5956 0 13.2698 0.129241 13.029 0.348951L7.75989 5.1567L2.49077 0.348951C2.24998 0.129241 1.9242 0 1.57009 0C1.21598 0 0.890202 0.129241 0.649409 0.336026C0.380287 0.568659 0.252808 0.878837 0.252808 1.18902C0.252808 1.48627 0.380286 1.78352 0.621079 2.02908C2.23581 3.51535 6.42844 7.3538 6.71173 7.6252L6.74006 7.65105C7.24998 8.11632 8.19898 8.11632 8.7089 7.65105Z"
+                            fill="#4C4F5A" />
+                    </svg>
+                </header>
+                <div class="code-content">
+                    <code>
+          <span class="c-r">&lt;div</span> <span class="c-y">class</span><span class="c-w">=</span><span class="c-g">"rect"</span><span class="c-r">&gt;&lt;/div&gt;</span></div>
+        </code>
+                </div>
+
+                <div class="code code-css">
+                    <header>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.9999 6.675L13.1999 6.075C12.9999 5.975 12.8999 5.775 12.9999 5.675L13.8999 3.975C14.4999 2.775 13.1999 1.475 11.9999 2.075L10.2999 2.975C10.1999 3.075 9.9999 2.975 9.8999 2.775L9.2999 0.975C8.8999 -0.325 7.0999 -0.325 6.6999 0.975L6.0999 2.775C5.9999 2.975 5.7999 3.075 5.6999 2.975L3.9999 2.075C2.7999 1.475 1.4999 2.775 2.0999 3.975L2.9999 5.675C3.0999 5.775 2.9999 5.975 2.7999 6.075L0.999902 6.675C-0.300098 7.075 -0.300098 8.975 0.999902 9.375L2.7999 9.975C2.9999 9.975 3.0999 10.175 2.9999 10.275L2.0999 11.975C1.4999 13.175 2.7999 14.475 3.9999 13.875L5.6999 12.975C5.8999 12.875 6.0999 12.975 6.0999 13.175L6.6999 14.975C7.0999 16.275 8.9999 16.275 9.3999 14.975L9.9999 13.175C10.0999 12.975 10.2999 12.875 10.3999 12.975L12.0999 13.875C13.2999 14.475 14.5999 13.175 13.9999 11.975L12.9999 10.275C12.8999 10.075 12.9999 9.875 13.1999 9.875L14.9999 9.275C16.2999 8.875 16.2999 7.075 14.9999 6.675ZM7.9999 10.375C6.6999 10.375 5.5999 9.275 5.5999 7.975C5.5999 6.675 6.6999 5.575 7.9999 5.575C9.2999 5.575 10.3999 6.675 10.3999 7.975C10.3999 9.275 9.2999 10.375 7.9999 10.375Z"
+                                fill="#4C4F5A" />
+                        </svg>
+                        <h1>CSS</h1>
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.7089 7.65105L14.8704 2.02908C15.1112 1.80937 15.2528 1.51212 15.2528 1.18902C15.2528 0.865913 15.1112 0.56866 14.8704 0.348951C14.6296 0.129241 14.3038 0 13.9497 0C13.5956 0 13.2698 0.129241 13.029 0.348951L7.75989 5.1567L2.49077 0.348951C2.24998 0.129241 1.9242 0 1.57009 0C1.21598 0 0.890202 0.129241 0.649409 0.336026C0.380287 0.568659 0.252808 0.878837 0.252808 1.18902C0.252808 1.48627 0.380286 1.78352 0.621079 2.02908C2.23581 3.51535 6.42844 7.3538 6.71173 7.6252L6.74006 7.65105C7.24998 8.11632 8.19898 8.11632 8.7089 7.65105Z"
+                                fill="#4C4F5A" />
+                        </svg>
+                    </header>
+                    <div class="code-content">
+                        <code>
+          <p class="line-1"><span class="c-y">.rect</span> <span>{</span></p><br/><p class="line-2"><span class="c-p">background</span><span>:</span> <span class="c-y">linear-gradient</span>( </p><br/><p class="line-3"><span class="c-o">-119deg</span>,</p><br/><p class="line-4"><span class="c-y">$gray</span> <span class="c-o">0%</span>,</p><br/><p class="line-5"><span class="c-y">$dark-gray</span> <span class="c-o">100%</span>);}</p>
+        </code>
+                    </div>
+                </div>
+                <div class="code code-js" id="code">
+                    <header>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.9999 6.675L13.1999 6.075C12.9999 5.975 12.8999 5.775 12.9999 5.675L13.8999 3.975C14.4999 2.775 13.1999 1.475 11.9999 2.075L10.2999 2.975C10.1999 3.075 9.9999 2.975 9.8999 2.775L9.2999 0.975C8.8999 -0.325 7.0999 -0.325 6.6999 0.975L6.0999 2.775C5.9999 2.975 5.7999 3.075 5.6999 2.975L3.9999 2.075C2.7999 1.475 1.4999 2.775 2.0999 3.975L2.9999 5.675C3.0999 5.775 2.9999 5.975 2.7999 6.075L0.999902 6.675C-0.300098 7.075 -0.300098 8.975 0.999902 9.375L2.7999 9.975C2.9999 9.975 3.0999 10.175 2.9999 10.275L2.0999 11.975C1.4999 13.175 2.7999 14.475 3.9999 13.875L5.6999 12.975C5.8999 12.875 6.0999 12.975 6.0999 13.175L6.6999 14.975C7.0999 16.275 8.9999 16.275 9.3999 14.975L9.9999 13.175C10.0999 12.975 10.2999 12.875 10.3999 12.975L12.0999 13.875C13.2999 14.475 14.5999 13.175 13.9999 11.975L12.9999 10.275C12.8999 10.075 12.9999 9.875 13.1999 9.875L14.9999 9.275C16.2999 8.875 16.2999 7.075 14.9999 6.675ZM7.9999 10.375C6.6999 10.375 5.5999 9.275 5.5999 7.975C5.5999 6.675 6.6999 5.575 7.9999 5.575C9.2999 5.575 10.3999 6.675 10.3999 7.975C10.3999 9.275 9.2999 10.375 7.9999 10.375Z"
+                                fill="#4C4F5A" />
+                        </svg>
+                        <h1>JS</h1>
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.7089 7.65105L14.8704 2.02908C15.1112 1.80937 15.2528 1.51212 15.2528 1.18902C15.2528 0.865913 15.1112 0.56866 14.8704 0.348951C14.6296 0.129241 14.3038 0 13.9497 0C13.5956 0 13.2698 0.129241 13.029 0.348951L7.75989 5.1567L2.49077 0.348951C2.24998 0.129241 1.9242 0 1.57009 0C1.21598 0 0.890202 0.129241 0.649409 0.336026C0.380287 0.568659 0.252808 0.878837 0.252808 1.18902C0.252808 1.48627 0.380286 1.78352 0.621079 2.02908C2.23581 3.51535 6.42844 7.3538 6.71173 7.6252L6.74006 7.65105C7.24998 8.11632 8.19898 8.11632 8.7089 7.65105Z"
+                                fill="#4C4F5A" />
+                        </svg>
+                    </header>
+                    <div class="code-content">
+                        <code>
+          <span class="c-y">var</span> <span class="c-b">colors</span> = [<span class="c-g">“#74B087”</span>, <span class="c-g">“#DE7300”</span>, <span class="c-g">“#74B087”</span>];<br/><br/>
+          <span class="c-c">// Do the thing</span><br/>
+          <span class="c-y">function</span> <span class="c-b">animate</span>() {}
+        </code>
+                    </div>
+                </div>
+
+
+            </div>
+            <video poster="/wp-content/uploads/2021/10/tryotel-animation-poster-test.png" preload="false" playsinline=""
+                class="elementor-video" autoplay="" loop="" muted="muted" controlslist="nodownload"
+                jm_neat="1379115009">
+                <source data-src="/wp-content/uploads/2021/06/out.webm" type="video/webm"
+                    src="pictures/mockrocket-export.mp4">
+            </video>
+
+    </section>
+    <!-- Project section  Start-->
+    <section id="section4">
+        <div class="html-style first-project">
+            &lt;projects&gt;
+        </div>
+        <!-- <div class="proTitle">
+        <i class="fa-solid fa-list-check"></i>
+        <h1>Projects</h1>
+    </div>
+<div class="blog-slider" id="project">
+    <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                    alt="">
+            </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                    voluptate repellendus magni illo ea animi? </div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                    alt="">
+            </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                    voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                    alt="">
+            </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                    voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="blog-slider__pagination"></div>
+</div>iper-slide
+
+<script>
+    var swswiper-wrapperswiper-slideiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
+</script> -->
+        <!-- Second Project Demo -->
+
+        <div class="second-project">
+            <table class="table">
+                <tr>
+                    <td>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="container-general">
+                                        <div class="gallery-wrap wrap-effect-1">
+                                            <div class="item"></div>
+                                            <div class="item"></div>
+                                            <div class="item"></div>
+                                            <div class="item"></div>
+                                            <div class="item"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="project-description1">
+                            <div class="project-title">
+                                Currier Management System
+                            </div>
+                            <div class="project-details">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, consequuntur
+                                    exercitationem.
+                                    Magni facilis
+                                    vel repellat harum eligendi earum eius, laudantium commodi reprehenderit itaque
+                                    ipsam! Eligendi
+                                    ad
+                                    reprehenderit sit qui corporis aliquam sapiente eum, repellat laboriosam vero,
+                                    deleniti quasi!
+                                    Unde, laborum?</p>
+                            </div>
+                            <a href=""><button class="btn btn-primary">Case Study</button></a>
+                            <a href=""><button class="btn btn-primary">Preview</button></a>
+                        </div>
+                    </td>
+                <tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide">
+                            <div class="container-general">
+                                <div class="gallery-wrap wrap-effect-2">
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="project-description2">
+                            <div class="project-title">
+                                Currier Management System
+                            </div>
+                            <div class="project-details">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, consequuntur
+                                    exercitationem.
+                                    Magni facilis
+                                    vel repellat harum eligendi earum eius, laudantium commodi reprehenderit itaque
+                                    ipsam! Eligendi
+                                    ad
+                                    reprehenderit sit qui corporis aliquam sapiente eum, repellat laboriosam vero,
+                                    deleniti quasi!
+                                    Unde,
+                                    laborum?</p>
+                            </div>
+                            <a href=""><button class="btn btn-primary">Case Study</button></a>
+                            <a href=""><button class="btn btn-primary">Preview</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide">
+                            <div class="container-general">
+                                <div class="gallery-wrap wrap-effect-3">
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="project-description3">
+                            <div class="project-title">
+                                Currier Management System
+                            </div>
+                            <div class="project-details">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, consequuntur
+                                    exercitationem.
+                                    Magni facilis
+                                    vel repellat harum eligendi earum eius, laudantium commodi reprehenderit itaque
+                                    ipsam! Eligendi
+                                    ad
+                                    reprehenderit sit qui corporis aliquam sapiente eum, repellat laboriosam vero,
+                                    deleniti quasi!
+                                    Unde,
+                                    laborum?</p>
+                            </div>
+                            <a href=""><button class="btn btn-primary">Case Study</button></a>
+                            <a href=""><button class="btn btn-primary">Preview</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide">
+                            <div class="container-general wrap-effect-4">
+                                <div class="gallery-wrap">
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="project-description4">
+                            <div class="project-title">
+                                Currier Management System
+                            </div>
+                            <div class="project-details">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, consequuntur
+                                    exercitationem.
+                                    Magni facilis
+                                    vel repellat harum eligendi earum eius, laudantium commodi reprehenderit itaque
+                                    ipsam! Eligendi
+                                    ad
+                                    reprehenderit sit qui corporis aliquam sapiente eum, repellat laboriosam vero,
+                                    deleniti quasi!
+                                    Unde,
+                                    laborum?</p>
+                            </div>
+                            <a href=""><button class="btn btn-primary">Case Study</button></a>
+                            <a href=""><button class="btn btn-primary">Preview</button></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="project-footer">
+            See other projects at my Github.
+            <a href="">
+                <p class="connect">Here is my Github...</p>
+            </a>
+        </div>
+
+        <div class="html-style">
+            &lt;&#47;projects&gt;
+        </div>
+    </section>
+    <!-- Project Section End -->
+
+
+
+    <section id="section5">
+        <div class="q mt-5 mb-5">
+            <div class="q-title"><i class="fa-solid fa-money-check-dollar"></i>
+                <h2>How much
+                    does it cost?</h2><span></span>
+                <p data-aos="fade-up">Tell me about your project, the cost will depend on the time needed. For example,
+                    it is necessary to count between 2500$
+                    and 3500$ for a showcase site. For bigger projects, the cost will depend on the time needed. I will
+                    then send you a
+                    quote.</p>
+            </div>
+            <div class="q-title"><i class="fa-solid fa-hand-point-right"></i>
+                <h2>What's next?</h2><span></span>
+                <p data-aos="fade-up">You will be able to modify the content thanks to the software (CMS) provided!
+                    Training hours are included to teach you
+                    how to modify or add content.</p>
+            </div>
+            <div class="q-title"><i class="fa-solid fa-moon"></i>
+                <h2>Sleep easy</h2><span></span>
+                <p data-aos="fade-up">You can let me support and update your content, on a monthly subscription basis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section6">
+        <div class="html-style">
+            &lt;about&gt;
+        </div>
+        <div class="footer">
+            <div class="about-me">
+                <div class="name">
+                    <div class="icons">
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Sifat Sakib </h3>
+                        <span class="separator"></span>
+                        <h3> Web Designer & Developer</h3>
+                    </div>
+                </div>
+                <p><i>Crafting Digital Brilliance in Dhaka, Bangladesh</i></p>
+
+                <div class="passion">
+                    <div class="icons">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h4>Passionate about Design & Code</h4>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h4>Turning Ideas into Web Reality</h4>
+                </div>
+
+                <div class="doing">
+                    <p><i>Hey there! I'm Brice Clain, your go-to guy for creating visually stunning and user-friendly
+                            websites. With a blend of
+                            creative flair and technical know-how, I bring digital dreams to life.</i></p>
+                </div>
+                <div class="service mb-5">
+                    <h3>Services:</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-file-code"></i>Website Design & Development</li>
+                        <li><i class="fa-solid fa-cube"></i>Branding, Logo, and Banner Creation</li>
+                    </ul>
+                    <p>
+                    <h6>Let's make your online presence shine!</h6>
+                    </p>
+                    <div class="icons"><i class="fa-solid fa-link">
+                            <a href=""></i>
+                        <p class="connect">Connect with Me on LinkedIn</p></a>
+
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h1>SKILLS <img src="pictures/skills.png" alt=""></h1>
+                    <table class="table last-table">
+                        <tr>
+                            <th>Graphic and UI Design</th>
+                            <th>Web Developement</th>
+                            <th>Web App Development</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="pictures/xd.png" alt="">
+                                <img src="pictures/illustrator.png" alt="">
+                                <img src="pictures/photoshop.png" alt="">
+                            </td>
+                            <td>
+                                <img src="pictures/html-5.png" alt="">
+                                <img src="pictures/css copy.png" alt="">
+                                <img src="pictures/php copy.png" alt="">
+                                <img src="pictures/java-script.png" alt="">
+
+                            </td>
+                            <td>
+                                <img src="pictures/hashtag(1).png" alt="">
+                                <img src="pictures/database(1).png" alt="">
+                                <img src="pictures/website(1).png" alt="">
+                            </td>
+
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            ScrollTrigger.create({
+                trigger: ".footer",
+                start: "top 40%",
+                onEnter: () => {
+                    $("#scrollButtonWrapper.wrapper").css({
+                        top: "40%",
+                        scale: "1.3",
+                        left: "75%",
+                        transition: ".3s ease-in-out"
+                    });
+                },
+                onLeaveBack: () => {
+                    $("#scrollButtonWrapper.wrapper").css({
+                        left: "80.5%",
+                        top: "8%",
+                        scale: "1",
+                        transition: ".3s ease-in-out"
+                    });
+                }
+            });
+
+        </script>
+        <div class="html-style">
+            &lt;&#47;about&gt;
+        </div>
+    </section>
+
+
+
+
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+        <p>&copy; SIFAT SAKIB.</p>
+    </div>
+    <link rel="stylesheet" href="chat.css">
+    <!-- <script src="./preload_screen.js"></script> -->
+    <script src="effect.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.home-page .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.shadows {
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    font-size: 100px;
+    transition: all 0.25s ease-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    /* Set the perspective for 3D effect */
+}
+
+.shadows span {
+    display: inline-block;
+    transform-origin: center center;
+    text-shadow: -15px 5px 20px #ced0d3;
+}
+
+.shadows:hover {
+    transform: rotateX(20deg) rotateY(-20deg);
+}
+
+.shadows:hover span {
+    text-shadow: -16px 6px 15px #ced0d3;
+}
