@@ -28,16 +28,16 @@ body {
 .wrapper {
   position: fixed;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 5;
   box-shadow: 0.6rem 0.6rem 3rem 0 rgba(255, 0, 0, 0.3);
-  left: 92.3vw;
-  margin-right: 4vw;
+  left: 90vw;
+  /* margin-right: 4vw; */
   top: 8vh;
 }
 
 @media screen and (max-width: 800px) {
   .wrapper {
-    left: 50vw;
+    left: 40vw !important;
     top: 91%;
   }
 }
@@ -371,7 +371,10 @@ body {
   border: 1px solid #ccc;
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
 }
-
+.first-type .input-text {
+  width: 30vw;
+  height: 15vh;
+}
 @media screen and (max-width: 800px) {
   .input-text {
     width: 70%;
