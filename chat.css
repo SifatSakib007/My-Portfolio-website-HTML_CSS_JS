@@ -20,7 +20,7 @@ body {
   background: linear-gradient(to right, #f3f3f3, #f4f4f4, #f4e9e9, #eff5fb);
   background-repeat: no-repeat;
   /*     background-attachment: fixed; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Contact Me Button Start */
@@ -161,17 +161,23 @@ body {
 
 @media screen and (max-width: 800px) {
   .html-style {
-    font-weight: 500;
     font-size: 1.5rem;
     right: 30vw;
-    opacity: 0.35;
-    margin: 1.5rem 0rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .html-style {
+    font-size: 1.5rem;
+    right: 30vw;
+    margin: 5.5rem 0 1rem 0.5rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   .first-intro {
-    top: 5vh;
+    top: 7vh;
     margin-bottom: 0;
   }
 }
@@ -207,8 +213,8 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  height: 450px;
+  max-width: 100%;
+  height: 48vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -217,7 +223,7 @@ body {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .panel {
     max-width: 100%;
     height: 35vh;
@@ -229,15 +235,13 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 6em;
 }
-
-.intro-start p {
-  font-family: "Lato", sans-serif;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .intro-start h1 {
     font-size: 2.7em;
   }
+}
+.intro-start p {
+  font-family: "Lato", sans-serif;
 }
 
 .panel__content-col {
@@ -277,7 +281,7 @@ body {
   right: 30%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .panel__addr {
     margin: 16px 0 0;
     top: 2vh;
@@ -301,7 +305,7 @@ body {
   background-color: #fff;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .panel__line {
     width: 64%;
     height: 0.36vh;
@@ -352,7 +356,12 @@ body {
  */
 @media screen and (max-width: 800px) {
   .end-intro {
-    top: 3vh;
+    top: 2vh;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .end-intro {
+    margin: 1rem 0 1rem 0.5rem;
   }
 }
 
@@ -375,10 +384,34 @@ body {
   width: 30vw;
   height: 15vh;
 }
+@media screen and (min-width: 250px) and (max-width: 410px) {
+  .first-type .input-text {
+    width: 60vw;
+    height: 22vh;
+  }
+}
+@media screen and (min-width: 411px) and (max-width: 554px) {
+  .first-type .input-text {
+    width: 58vw;
+    height: 18vh;
+  }
+}
+@media screen and (min-width: 555px) and (max-width: 800px) {
+  .first-type .input-text {
+    width: 55vw;
+    height: 14vh;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .first-type .input-text {
+    width: 60vw;
+    height: 14vh;
+  }
+}
 @media screen and (max-width: 800px) {
   .input-text {
     width: 70%;
-    margin: 2rem auto 0rem auto;
+    margin: 1rem auto 0rem auto;
     padding: 0rem 0rem 0rem 0rem;
     border-radius: 22px;
   }
@@ -391,10 +424,27 @@ body {
   letter-spacing: 0.1em;
   font-weight: bold;
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 515px) {
   .typeEffect {
     font-size: 0.8rem;
+    color: #000;
+    margin: 0.8rem 3rem;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 516px) and (max-width: 800px) {
+  .typeEffect {
+    font-size: 0.88rem;
+    color: #000;
+    margin: 0.8rem 3rem;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .typeEffect {
+    font-size: 1rem;
     color: #000;
     margin: 0.8rem 3rem;
     letter-spacing: 0.1em;
@@ -425,7 +475,7 @@ body {
   padding: 0 0px 0 0;
   list-style: none;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
 }
 
 @media screen and (max-width: 800px) {
@@ -1165,7 +1215,7 @@ video {
 .footer {
   position: relative;
   text-align: left;
-  width: 70%;
+  width: 50%;
   /* left: 25vw; */
   color: #000;
   margin: 1rem 3rem 1rem 28rem;
@@ -1308,7 +1358,10 @@ video {
     overflow: hidden;
   }
 }
-
+.last-table {
+  width: 60%;
+  margin-left: 20%;
+}
 @media only screen and (max-width: 800px) {
   .last-table tr:first-child {
     display: none;
